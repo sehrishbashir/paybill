@@ -1,0 +1,60 @@
+.ovp-paybill {
+    margin-left: 30px;
+}
+
+.owner-details {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    padding-right: 18px;
+    padding-left: 0;
+}
+
+.own-img {
+    width: 117px;
+    height: 120px;
+    background-image: url(../assets/pic1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+    border-radius:100px;
+}
+
+.own-content {
+    margin: 30px 0;
+    line-height: 13px;
+}
+
+.own-content h1 {
+    font-weight: 400;
+    font-size: 25px;
+    color: #f71e3b;
+}
+
+.own-content h5 {
+    font-size: 11px;
+    margin-bottom: 0;
+    color: #051727;
+}
+
+.own-content h5, .own-content p {
+    font-weight: bold;
+}
+.own-content p{
+    font-size: 10px;
+    margin-top: 3px;
+    color: #a4a4a4;
+}
+
+
+
+
+
+
+
+
+
+
+
+

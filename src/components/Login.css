@@ -1,0 +1,80 @@
+.login-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pay-bill {
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.drop, .bulb, .clock {
+    font-size: 45px;
+    padding: 10px 10px 0 10px;
+    color: #ededed;
+}
+
+.content h1 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 3em;
+    color: #f71e3b;
+    margin-top: -8px;
+}
+
+b {
+    color: #0a1d2e;
+}
+
+.content p {
+    margin-top: 1px;
+    color: #9b9b9b;
+    font-size: 16px;
+}
+
+.pb-btn {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+}
+
+.login, .forget{
+    padding: 8px 90px ;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 1px;
+}
+
+.login {
+    margin: 5px 0 4px 0;
+    background-color:#f71e3b ;
+    border: 1px solid #f71e3b;
+}
+
+.forget {
+    color: #0a1d2e;
+    border: none;
+    background: transparent;
+}
+
+.fill {
+    font-size: 13px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    background-color: #d5d5d5;
+    border: 1px solid #d5d5d5;
+    border-radius: 2px;
+}
+
+::placeholder {
+    color: #011627;
+    font-weight: 400;
+}
