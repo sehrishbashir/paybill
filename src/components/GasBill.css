@@ -1,0 +1,100 @@
+.gasbill-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.up-content {
+    width: 100%;
+}
+
+.gasbill-container .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px 5px;
+}
+
+.gb-details {
+    background-color: #f71634;
+}
+
+.gasbill-container .nw-p p {
+    color: #e7e7e7;
+}
+
+.gasbill-container .nw-p1 p {
+    color: #ffffff;
+}
+
+.gb-content {
+    /* background-image: linear-gradient(180deg, black, #25343b, #32373a); */
+    padding: 25px 0;
+}
+
+
+.gb-content h2 {
+    color: #ffffff;
+}
+
+.gb-content h3, .gb-content h2 {
+    margin: 0;
+}
+
+.gb-details h1 {
+    text-align: center;
+    color: #e7e7e7;
+    margin: 0;
+    padding: 15px 0;
+    font-weight: 100;
+    font-size: 45px;
+    background-image: linear-gradient(10deg, #32373a, transparent, #32373A);
+}
+
+.gb-details span {
+    margin-right: 10px;
+    font-size: 50px;
+}
+
+.chart-section {
+    width: 100%;
+}
+
+.chart-section h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #acacac;
+    text-align: center;
+    background-color: #32373a;
+    text-decoration: underline;
+}
+
+.chart-content {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+}
+
+.btn-yourbill {
+    display: flex;
+    justify-content: center;
+}
+
+.paybill-btn {
+    background-color: #ffa123;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 5px 91px;
+    margin: 40px 5px 35px;
+    border-radius: 2px;
+    font-size: 15px;
+    box-shadow: 0px 0px 15px #ffffff;
+}
+
+.footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

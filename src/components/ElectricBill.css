@@ -1,0 +1,119 @@
+.electric-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.electric-container .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px 5px;
+}
+
+.eb-details {
+    background-color: #ff9f1c;
+}
+
+.electric-container .nw-p p {
+    color: #e7e7e7;
+}
+
+.electric-container .nw-p1 p {
+    color: #ffffff;
+}
+
+.eb-details h1 {
+    text-align: center;
+    color: #e7e7e7;
+    margin: 0;
+    padding: 15px 0;
+    font-weight: 100;
+    font-size: 45px;
+    background-image: linear-gradient(10deg, #32373a, transparent, #32373A);
+}
+
+.gb-content {
+    /* background-image: linear-gradient(180deg, black, #25343b, #32373a); */
+    padding: 25px 0;
+}
+
+.eb-details span {
+    margin-right: 10px;
+    font-size: 50px;
+}
+
+.eb-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.eb-content h3 {
+    margin: 10px 0 0 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.eb-content p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 11px;
+}
+
+.eb-content h3, p {
+    color: #acacac;
+}
+
+.eb-content h2 {
+    color: #081c2d;
+    font-weight: 400;
+    font-size: 51px;
+    margin-top: 0;
+    line-height: 48px;
+    margin-bottom: 18px;
+}
+
+.chart-section {
+    width: 100%;
+    height: 350px;
+    background-color: #f0f0f0;
+}
+
+.chart-section h3 {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #acacac;
+    text-align: center;
+    z-index: 1;
+    background-color: #32373a;
+    text-decoration: underline;
+}
+
+.electric-container .btn-yourbill {
+    display: flex;
+    justify-content: center;
+}
+
+.electric-container .paybill-btn {
+    background-color: #112435;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 5px 91px;
+    margin: 40px 5px 35px;
+    border-radius: 2px;
+    font-size: 15px;
+    box-shadow: 0px 0px 15px #ffffff;
+}
+
+.footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

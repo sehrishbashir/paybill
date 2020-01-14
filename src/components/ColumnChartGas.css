@@ -1,0 +1,20 @@
+canvas{
+    height:350px !important;
+}
+
+.canvasjs-chart-credit {
+    display: none !important;
+}
+
+.canvasjs-chart-toolbar button {
+    display: none;
+} 
+
+#canvasjs-react-chart-container-0 {
+    height: 0 !important;
+}
+
+/* .canvasjs-chart-canvas {
+    background-color: #f0f0f0;
+} */
+
