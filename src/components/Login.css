@@ -5,13 +5,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(150deg, black, transparent);
 }
+
 
 .pay-bill {
     text-align: center;
 }
 
-.icons {
+.login-container .icons {
     display: flex;
     justify-content: center;
 }
@@ -54,6 +56,7 @@ b {
 }
 
 .login {
+    padding: 8px 130px ;
     margin: 5px 0 4px 0;
     background-color:#f71e3b ;
     border: 1px solid #f71e3b;

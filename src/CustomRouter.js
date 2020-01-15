@@ -4,9 +4,6 @@
 //     Route
 // } from 'react-router-dom';
 // import App from './App';
-// // import Login from './components/Login';
-
-// // import Home from './components/Hero'
 
 // const CustomRouter = () => (
 //         <Router>

@@ -1,3 +1,13 @@
+.gasbill-container .back .a:hover, .gasbill-container .back .a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nw-p1 a, .nw-p1 a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .gasbill-container {
     width: 100%;
     display: flex;
@@ -11,22 +21,8 @@
     width: 100%;
 }
 
-.gasbill-container .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 5px 5px;
-}
-
 .gb-details {
     background-color: #f71634;
-}
-
-.gasbill-container .nw-p p {
-    color: #e7e7e7;
-}
-
-.gasbill-container .nw-p1 p {
-    color: #ffffff;
 }
 
 .gb-content {
@@ -81,20 +77,16 @@
 .btn-yourbill {
     display: flex;
     justify-content: center;
+    margin-top: 60px;
 }
 
 .paybill-btn {
     background-color: #ffa123;
     color: #ffffff;
     border: 1px solid #ffffff;
-    padding: 5px 91px;
+    padding: 8px 91px;
     margin: 40px 5px 35px;
     border-radius: 2px;
     font-size: 15px;
     box-shadow: 0px 0px 15px #ffffff;
-}
-
-.footer {
-    margin-top: 20px;
-    margin-bottom: 20px;
 }

@@ -3,25 +3,21 @@ import './Update.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faThumbtack, faBan, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
+import {Link, BrowserRouter as Router} from 'react-router-dom';
+import Footer from './Footer';
+import Header from './Header';
+
 export default function Update() {
     return (
+        <Router>
         <div className="Update">
             <div className="update-container">
                 <div className="up-content">
-                <div className="header">
-                    <div className="back">
-                        <p><FontAwesomeIcon icon={faChevronLeft} />  Back</p>
+                    <Header backIcon={<FontAwesomeIcon icon={faChevronLeft} />} back="back"/>
+                    
+                    <div className="up-details">
+                        <h1>Update details</h1>
                     </div>
-                    <div className="paybill">
-                        <p>PayBill</p>
-                    </div>
-                    <div className="back">
-                        <p>Logout</p>
-                    </div>
-                </div>
-                <div className="up-details">
-                    <h1>Update details</h1>
-                </div>
                 </div>
                 <div className="inpt">
                     <div className="inpt-1">
@@ -39,15 +35,12 @@ export default function Update() {
                     <div className=" inpt-2">
                         <input type="number" placeholder="0155255874" /><FontAwesomeIcon className="font-icon" icon={faBan} />
                     </div>
-                
-                    <button className="update">Update</button>
+
+                    <Link to="/updated"><button className="update">Update</button></Link>
                 </div>
-                <div className="footer">
-                <div className="copy-right">
-                        <p><span>Pay</span><b>Bill  -</b> 2016 Copyright All Rights Reserved</p>
-                    </div>
-                </div>
+                <Footer />
             </div>
         </div>
+        </Router>
     )
 }

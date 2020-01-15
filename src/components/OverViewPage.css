@@ -1,5 +1,10 @@
+.ovp-container .back .a:hover, .ovp-container .back .a {
+    text-decoration: none;
+    color: #007bff;
+}
+
 .ovp-paybill {
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .owner-details {
@@ -51,7 +56,7 @@
     padding: 0;
 }
 
-.ovp-item {
+.ovp-items .ovp-item {
     padding: 4px 6px;
     display: flex;
     justify-content: space-between;
@@ -70,7 +75,7 @@
     padding: 0px 15px 0 7px;
 }
 
-.icons {
+.ovp-container .icons {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -81,6 +86,7 @@
     margin-bottom: 0;
     font-size: 30px;
     font-weight: 100;
+    color: #ffffff;
 }
 
 .bill {
@@ -101,6 +107,7 @@
 
 .bill-cash p {
     margin: 0;
+    color: #ffffff;
 }
 
 .bill-cash span {
@@ -127,7 +134,11 @@
     margin-top: -5px;
 }
 
-.new-icons {
+.bill .click-next {
+    color: #ffffff;
+}
+
+.ovp-item .new-icons {
     width: 80%;
     display: flex;
     justify-content: start;
@@ -139,7 +150,15 @@
     padding-top: 6px;
 }
 
+.new-bill .click-next {
+    color: #000000;
+}
+
 .user {
+    font-size: 16px;
+}
+
+.call {
     font-size: 15px;
 }
  
@@ -152,12 +171,6 @@
 
 .new-bill .click-next {
     border: 1px solid #a4a4a4;
-}
-
-.OverViewPage .footer {
-    padding: 50px 0 10px;
-    font-size: 9px;
-    text-align: center;
 }
 
 .ovp-items .ovp-contact {

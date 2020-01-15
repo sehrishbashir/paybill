@@ -11,22 +11,7 @@
     width: 100%;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    margin: 0;
-}
-
-.back p {
-    color: #1987fd;
-
-    margin-bottom: 5px;
-    font-size: 15px;
-}
-
-.paybill p {
-    color: #151515;
+.paybill {
     margin-bottom: 5px;
     font-weight: 600;
     font-size: 15px;
@@ -43,10 +28,6 @@
     padding: 25px;
     font-weight: 100;
     font-size: 28px;
-}
-
-.inpt {
-    margin-top: -40px;
 }
 
 .inpt-1 {
@@ -103,15 +84,7 @@ input {
     color: #c0c0c0;
 }
 
-.footer{
-    padding: 0 10px;
-    font-size: 9px;
-    text-align: center;
-}
-.copy-right p{
-    color:#c2c2c2;
-}
 
-.copy-right span{
-    color: #f72542;
-}
+
+ 
+

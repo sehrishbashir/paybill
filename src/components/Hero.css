@@ -11,15 +11,15 @@
     text-align: center;
 }
 
-.icons {
+.hero-container .icons {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.drop, .bulb, .clock {
+.hero-container .icons .drop, .hero-container .icons .bulb, .hero-container .icons .clock {
     font-size: 45px;
-    padding: 10px 10px 0 10px;
     color: #ededed;
+    padding: 0;
 }
 
 .content h1 {
@@ -53,10 +53,11 @@ b {
     border-radius: 1px;
 }
 
-.login-btn {
+.hero-container .login-btn {
     background-color:#f71e3b ;
     border: 1px solid #f71e3b;
     margin-bottom: 8px;
+    padding: 8px 130.5px;
 }
 
 .register {

@@ -14,6 +14,10 @@ canvas{
     height: 0 !important;
 }
 
+#canvasjs-react-chart-container-1 {
+    height: 350px !important;
+}
+
 /* .canvasjs-chart-canvas {
     background-color: #f0f0f0;
 } */

@@ -1,0 +1,37 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px 5px;
+}
+
+.Header ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+}
+
+.Header ul li {
+    list-style: none;
+}
+
+.gasbill-container .nw-p, .waterbill-container .nw-p, .electric-container .nw-p {
+    color: #e7e7e7;
+}
+
+.gasbill-container .nw-p1, .waterbill-container .nw-p1, .electric-container .nw-p1 {
+    color: #ffffff;
+}
+
+.update-container .nw-p, .pyb-container .nw-p, .ovp-container .nw-p {
+    color: #151515;
+}
+
+.update-container .nw-p1 a, .nw-p1 a:hover, .pyb-container .nw-p1 a, .nw-p1 a:hover {
+    color:#007bff ;
+}
+
+.ovp-container .nw-p {
+    margin-left: 40px;
+}

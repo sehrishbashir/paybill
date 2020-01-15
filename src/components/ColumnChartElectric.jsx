@@ -22,19 +22,19 @@ export default class ColumnChartElectric extends Component {
 			indexLabelPlacement: "outside",
 			dataPoints: [
 				{ label: "Oct", y: 16000 },
-				{ label: "Nov", y: 20000 , indexLabel: `14000 KW 
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				Avg / Mon`},
+				{ label: "Nov", y: 20000 },
 				{ label: "Dec", y: 10000 },
-				{ label: "Jan", y: 15000 }
+				{ label: "Jan", y: 15000 , indexLabel: `14000 KW 
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				Avg / Mon`}
 
 
 				
