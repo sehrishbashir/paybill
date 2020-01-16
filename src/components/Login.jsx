@@ -1,7 +1,7 @@
-// import React from 'react';
-import React, { Component } from 'react'
+import React from 'react';
+// import React, { Component } from 'react'
 import './Login.css';
-
+import PropType from 'prop-types'
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 
@@ -35,11 +35,7 @@ import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 
 
-export default class Login extends Component {
-    constructor(props) {
-        super(props);}
-
-    render() {
+export default function Login (props){
         return (
             <Router>
                 <div className="Login">
@@ -51,10 +47,10 @@ export default class Login extends Component {
                             </div>
                         </div>
                         <form className="pb-btn">
-                            <input  className="fill" type="text" value={this.state.username} 
-                                    onChange = {this.handlename}/>
-                            <input className="fill" type="password" value={this.state.password}
-                                    onChange = {this.handlepassword} />
+                            <input  className="fill" type="text" value={props.user.username} 
+                                    onChange={props.callEditName}/>
+                            <input className="fill" type="password" value={props.user.password}
+                                    onChange={props.callEditPassword}/>
 
                             <button type="submit" onClick={e => window.open('/over-view-page', '_self')} className="login">Login</button>
                             {/* <button className="login"><Link to="/over-view-page">Login</Link></button> */}
@@ -67,5 +63,11 @@ export default class Login extends Component {
             </Router>
         )
         }
-}
+
+        Login.propTypes = {
+            callEditName: PropType.func,
+            callEditPassword: PropType.func,
+            user: PropType.object
+        }
+
 

@@ -27,38 +27,38 @@ export default class App extends Component {
   constructor() {
     super();
 
-    this.state = {
-      userData: [
-        {
-          username: "username",
-          password: "************"
-        }
+  //   this.state = {
+  //     userData: [
+  //       {
+  //         username: "username",
+  //         password: "************"
+  //       }
 
-      ]
-    }
-  }
+  //     ]
+  //   }
+  // }
 
-  handlename = (event) => {
-    this.setState({
-      username: event.target.value
-    });
-  }
+  // handlename = (event) => {
+  //   this.setState({
+  //     username: event.target.value
+  //   });
+  // }
 
-  handlepassword = (event) => {
-    this.setState({
-      password: event.target.value
-    });
+  // handlepassword = (event) => {
+  //   this.setState({
+  //     password: event.target.value
+  //   });
 
   }
   render() {
     return (
       <div>
-        {
+        {/* {
                     this.state.userData.map(user => {
                         return <Login userdetails={user} 
                             callEditName={(user) => this.handlename} callEditPassword={(user) => this.handlepassword}/>
                     })
-                }
+                } */}
         {/* <Hero /> */}
         <Router>
           <Switch>

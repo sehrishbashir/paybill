@@ -46,8 +46,29 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Login from './Login';
 
 export default class Hero extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
+         this.state = {
+      userData: [
+        {
+          username: "username",
+          password: "************"
+        }
+
+      ]
+    }
+  }
+
+  handlename = (event) => {
+    this.setState({
+      username: event.target.value
+    });
+  }
+
+  handlepassword = (event) => {
+    this.setState({
+      password: event.target.value
+    });
     }
 
 render() {
@@ -56,6 +77,12 @@ render() {
 
 
             <div className="HeroStyle">
+            {
+                    this.state.userData.map(user => {
+                        return <Login user={user} 
+                            callEditName={(user) => this.handlename} callEditPassword={(user) => this.handlepassword}/>
+                    })
+                }
                 <div className="hero-container">
                     <div className="pay-bill">
                         <div className="icons">
