@@ -27,7 +27,9 @@ export default function ElectricBill() {
                             </div>
                         </div>
                         <div className="btn-yourbill">
-                            <Link to="pay-bill"><button className="paybill-btn">Pay your Water Bill</button></Link>
+
+                            <button onClick={e => window.open('/pay-bill', '_self')} className="paybill-btn">Pay your Water Bill</button>
+                            {/* <Link to="pay-bill"><button className="paybill-btn">Pay your Water Bill</button></Link> */}
                         </div>
 
                         <Footer />

@@ -1,0 +1,50 @@
+.pro-content h2 {
+    color: #081c2d;
+    font-weight: 400;
+    font-size: 51px;
+    margin-top: 0;
+    line-height: 48px;
+    margin-bottom: 18px;
+}
+
+.pro-content h3 {
+    margin: 10px 0 0 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.pro-content h3, p {
+    color: #acacac;
+}
+
+.pro-content p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 11px;
+}
+
+.pro-details h1 {
+    text-align: center;
+    color: #e7e7e7;
+    margin: 0;
+    padding: 15px 0;
+    font-weight: 100;
+    font-size: 45px;
+    background-color: #081c2d;
+}
+
+.pro-details span {
+    margin-right: 10px;
+    font-size: 50px;
+}
+
+.pro-content {
+    padding: 25px 0;
+}
+
+.pro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}

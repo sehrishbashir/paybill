@@ -22,7 +22,7 @@ export default class GasBill extends Component {
                     <div className="gasbill-container">
                         <div className="up-content">
                             <Header backIcon={<FontAwesomeIcon icon={faChevronLeft} />} back="back"/>
-                            <Products icon={<FontAwesomeIcon icon={faClock} />} heading="Gas" value="$$299.01" />
+                            <Products icon={<FontAwesomeIcon icon={faClock} />} heading="Gas" value="$299.01" />
 
                             <div className="chart-section">
                                 <div className="chart-content">
@@ -31,7 +31,10 @@ export default class GasBill extends Component {
                                 <ColumnChartGas />
                             </div>
                             <div className="btn-yourbill">
-                                <Link to="pay-bill"><button className="paybill-btn">Pay your Gas Bill</button></Link>
+
+
+                                <button onClick={e => window.open('/pay-bill', '_self')} className="paybill-btn">Pay your Gas Bill</button>
+                                {/* <Link to="pay-bill"><button className="paybill-btn">Pay your Gas Bill</button></Link> */}
                             </div>
 
                             <Footer />

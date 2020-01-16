@@ -11,7 +11,7 @@ export default class ColumnChartGas extends Component {
 	const options = {
 		animationEnabled: true,
 		exportEnabled: true,
-		theme: "dark2", //"light1", "dark1", "dark2"
+		theme: "light2", //"light1", "dark1", "dark2"
 		// title:{
 		// 	text: "Gas usage"
 		// },
@@ -24,10 +24,6 @@ export default class ColumnChartGas extends Component {
 				{ label: "Oct", y: 5000 },
 				{ label: "Nov", y: 12000 },
 				{ label: "Dec", y: 10000 },
-
-				// { label: "Oct", y: this.props.value1 },
-				// { label: "Nov", y: this.props.value2 },
-				// { label: "Dec", y: this.props.value3 },
 				{ label: "Jan", y: 20000 ,indexLabel: `14000 Gallons 
 				
 				

@@ -3,55 +3,16 @@
     color: #ffffff;
 }
 
-.nw-p1 a, .nw-p1 a:hover {
-    text-decoration: none;
-    color: #ffffff;
-}
-
 .gasbill-container {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
 }
 
 .up-content {
     width: 100%;
-}
-
-.gb-details {
-    background-color: #f71634;
-}
-
-.gb-content {
-    /* background-image: linear-gradient(180deg, black, #25343b, #32373a); */
-    padding: 25px 0;
-}
-
-
-.gb-content h2 {
-    color: #ffffff;
-}
-
-.gb-content h3, .gb-content h2 {
-    margin: 0;
-}
-
-.gb-details h1 {
-    text-align: center;
-    color: #e7e7e7;
-    margin: 0;
-    padding: 15px 0;
-    font-weight: 100;
-    font-size: 45px;
-    background-image: linear-gradient(10deg, #32373a, transparent, #32373A);
-}
-
-.gb-details span {
-    margin-right: 10px;
-    font-size: 50px;
 }
 
 .chart-section {

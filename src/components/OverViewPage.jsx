@@ -1,4 +1,3 @@
-import React from 'react'
 import './OverViewPage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTint, faLightbulb, faClock, faAngleRight, faUser, faCommentAlt } from '@fortawesome/free-solid-svg-icons'
@@ -8,11 +7,15 @@ import { Link, BrowserRouter as Router } from 'react-router-dom';
 import Footer from './Footer';
 import Header from './Header';
 
+import React, { Component } from 'react'
 
-
-export default function OverViewPage() {
-    return (
-        <Router>
+export default class OverViewPage extends Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (
+            <Router>
             <div className="OverViewPage">
                 <div className="ovp-container">
                     <Header />
@@ -36,7 +39,11 @@ export default function OverViewPage() {
                                     <span><p>January</p></span>
                                     <span><p className="value">$198.9 </p></span>
                                 </div>
-                                <Link to="/water-bill"><div className="click-next"><FontAwesomeIcon icon={faAngleRight} /></div></Link>
+
+
+
+                                <div onClick={e => window.open('/water-bill', '_self')} className="click-next"><FontAwesomeIcon icon={faAngleRight} /></div>
+                                {/* <Link to="/water-bill"><div className="click-next"><FontAwesomeIcon icon={faAngleRight} /></div></Link> */}
                             </div>
 
                         </div>
@@ -53,7 +60,11 @@ export default function OverViewPage() {
                                     <span><p>January</p></span>
                                     <span><p className="value">$498.9 </p></span>
                                 </div>
-                                <Link to="/electric-bill"><div className="click-next"><FontAwesomeIcon icon={faAngleRight} /></div></Link>
+
+
+
+                                <div onClick={e => window.open('/electric-bill', '_self')} className="click-next"><FontAwesomeIcon icon={faAngleRight} /></div>
+                                {/* <Link to="/electric-bill"><div className="click-next"><FontAwesomeIcon icon={faAngleRight} /></div></Link> */}
                             </div>
 
                         </div>
@@ -70,7 +81,10 @@ export default function OverViewPage() {
                                     <span><p>January</p></span>
                                     <span><p className="value">$498.9 </p></span>
                                 </div>
-                                <Link to="/gas-bill"><div className="click-next"><FontAwesomeIcon icon={faAngleRight} /></div></Link>
+
+
+                                <div onClick={e => window.open('/gas-bill', '_self')} className="click-next"><FontAwesomeIcon icon={faAngleRight} /></div>
+                                {/* <Link to="/gas-bill"><div className="click-next"><FontAwesomeIcon icon={faAngleRight} /></div></Link> */}
                             </div>
 
                         </div>
@@ -84,7 +98,10 @@ export default function OverViewPage() {
                                 </div>
 
                                 <div className="bill new-bill">
-                                    <Link to="/update"><div className="click-next"><FontAwesomeIcon icon={faAngleRight} /></div></Link>
+
+
+                                    <div onClick={e => window.open('/update', '_self')} className="click-next"><FontAwesomeIcon icon={faAngleRight} /></div>
+                                    {/* <Link to="/update"><div className="click-next"><FontAwesomeIcon icon={faAngleRight} /></div></Link> */}
                                 </div>
 
                             </div>
@@ -109,6 +126,7 @@ export default function OverViewPage() {
                 </div>
             </div>
         </Router>
-
-    )
+        )
+    }
 }
+

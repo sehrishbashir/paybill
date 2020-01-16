@@ -25,7 +25,9 @@ export default function Register() {
                             <input className="fill" type="number" placeholder="My PayBill ID" />
 
                             <button className="forget id"><small>Not sure ? Find your ID by clicking here </small></button>
-                            <Link to="/over-view-page"><button className="register">Register</button></Link>
+                            
+                            <button onClick={e => window.open('/over-view-page', '_self')} className="register">Register</button>
+                            {/* <Link to="/over-view-page"><button className="register">Register</button></Link> */}
                         </div>
                     </div>
                 </div>

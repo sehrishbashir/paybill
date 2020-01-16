@@ -2,75 +2,12 @@
     height: 350px !important;
 }
 
-
-.electric-container .back .a:hover, .electric-container .back .a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
 .electric-container {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
-}
-
-.eb-details {
-    background-color: #f71634;
-}
-
-.eb-details h1 {
-    text-align: center;
-    color: #e7e7e7;
-    margin: 0;
-    padding: 15px 0;
-    font-weight: 100;
-    font-size: 45px;
-    background-image: linear-gradient(10deg, #32373a, transparent, #32373A);
-}
-
-.gb-content {
-    /* background-image: linear-gradient(180deg, black, #25343b, #32373a); */
-    padding: 25px 0;
-}
-
-.eb-details span {
-    margin-right: 10px;
-    font-size: 50px;
-}
-
-.eb-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-}
-
-.eb-content h3 {
-    margin: 10px 0 0 0;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.eb-content p {
-    margin: 0;
-    font-size: 12px;
-    line-height: 11px;
-}
-
-.eb-content h3, p {
-    color: #acacac;
-}
-
-.eb-content h2 {
-    color: #081c2d;
-    font-weight: 400;
-    font-size: 51px;
-    margin-top: 0;
-    line-height: 48px;
-    margin-bottom: 18px;
 }
 
 .chart-section {

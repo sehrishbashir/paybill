@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react'
 import './App.css';
-// import Hero from './components/Hero';
+import Hero from './components/Hero';
 import Login from './components/Login';
 import Register from './components/Register';
 import Update from './components/Update';
@@ -14,22 +14,55 @@ import ColumnChart from './components/ColumnChartGas';
 import Template from './components/Template';
 
 
-import './components/Hero.css';
+// import './components/Hero.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTint, faLightbulb, faClock } from '@fortawesome/free-solid-svg-icons'
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CustomRouter from './CustomRouter';
 
-export default function App() {
-  return (
-    <div>
-      {/* <Hero /> */}
-      <Router>
-        <div>
+
+
+export default class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      userData: [
+        {
+          username: "username",
+          password: "************"
+        }
+
+      ]
+    }
+  }
+
+  handlename = (event) => {
+    this.setState({
+      username: event.target.value
+    });
+  }
+
+  handlepassword = (event) => {
+    this.setState({
+      password: event.target.value
+    });
+
+  }
+  render() {
+    return (
+      <div>
+        {
+                    this.state.userData.map(user => {
+                        return <Login userdetails={user} 
+                            callEditName={(user) => this.handlename} callEditPassword={(user) => this.handlepassword}/>
+                    })
+                }
+        {/* <Hero /> */}
+        <Router>
           <Switch>
             <Route path="/" exact component={Hero} />
-
             {/* hero */}
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
@@ -55,57 +88,60 @@ export default function App() {
             <Route path="/logout" component={Hero} />
 
             {/* update */}
-            <Route path="/updated" component={OverViewPage}/>
+            <Route path="/updated" component={OverViewPage} />
+            <Route path="/pay-bill" component={PayYourBill} />
+
+
 
           </Switch>
-        </div>
-      </Router>
-      <Hero />
-      <Login />
-      <Register />
-      <Update />
-      <PayYourBill />
-      <OverViewPage />
+        </Router>
+        {/* <Hero /> */}
+        {/* <Login /> */}
+        {/* <Register />
+      <Update /> */}
+        {/* <PayYourBill /> */}
+        {/* <OverViewPage />
       <WaterBill />
       <ElectricBill />
-      <GasBill />
+      <GasBill /> */}
 
 
-      {/* <ProgressChart /> */}
-      {/* <Template /> */}
-      {/* <ColumnChart /> */}
-      {/* <CustomRouter /> */}
-    </div>
-  );
-}
 
-function Hero() {
-  return (
-    <Router>
-      <div className="HeroStyle">
-        <div className="hero-container">
-          <div className="pay-bill">
-            <div className="icons">
-              <div className="drop"><FontAwesomeIcon icon={faTint} /></div>
-              <div className="bulb"><FontAwesomeIcon icon={faLightbulb} /></div>
-              <div className="clock"><FontAwesomeIcon icon={faClock} /></div>
-            </div>
-            <div className="content">
-              <h1>Pay<b>Bill</b></h1>
-              <p>Pay your bill on the go now</p>
-            </div>
-          </div>
-          <div className="pb-btn">
-            <Link to="/login"><button className="login-btn">Login</button></Link>
-            <Link to="/register"><button className="register">New Customer ? Register</button></Link>
-          </div>
-
-        </div>
       </div>
-    </Router>
-
-
-
-
-  )
+    )
+  }
 }
+
+
+// class Hero extends Component {
+//   render() {
+//     return (
+//       <Router>
+//       <div className="HeroStyle">
+//         <div className="hero-container">
+//           <div className="pay-bill">
+//             <div className="icons">
+//               <div className="drop"><FontAwesomeIcon icon={faTint} /></div>
+//               <div className="bulb"><FontAwesomeIcon icon={faLightbulb} /></div>
+//               <div className="clock"><FontAwesomeIcon icon={faClock} /></div>
+//             </div>
+//             <div className="content">
+//               <h1>Pay<b>Bill</b></h1>
+//               <p>Pay your bill on the go now</p>
+//             </div>
+//           </div>
+//           <div className="pb-btn">
+//             {/* <Link to="/login"><button className="login-btn">Login</button></Link> 
+//             <Link to="/register"><button className="register">New Customer ? Register</button></Link> */}
+
+//             <button onClick={e => window.open('/login', '_self')} className="login-btn">Login</button>
+//             <button onClick={e => window.open('/register', '_self')} className="register">New Customer ? Register</button>
+//           </div>
+//         </div>
+//       </div>
+//     </Router>
+//     )
+//   }
+// }
+
+

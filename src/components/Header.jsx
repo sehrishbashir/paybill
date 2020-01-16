@@ -1,5 +1,4 @@
 import React from 'react';
-// import './ElectricBill.css'
 import'./Header.css';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,17 +8,17 @@ export default function Header(props) {
     return (
         <Router>
             <div className="Header">
-                {/* <header className="header"> */}
                     <ul>
-                        <li className="back nw-p1">
-                            <Link to="back">{props.backIcon} {props.back}</Link>
+                        <li className="back nw-p1" onClick={e => window.open('/back', '_self')}>
+                            {props.backIcon} {props.back}
+                            {/* <Link to="back">{props.backIcon} {props.back}</Link> */}
                         </li>
                         <li className="paybill nw-p">PayBill</li>
-                        <li className="back nw-p1">
-                            <Link className="a" to="logout">Logout</Link>
+                        <li className="back nw-p1 a" onClick={e => window.open('/logout', '_self')}>
+                            Logout
+                            {/* <Link className="a" to="logout">Logout</Link> */}
                         </li>
                     </ul>
-                {/* </header> */}
             </div>
         </Router>
     )

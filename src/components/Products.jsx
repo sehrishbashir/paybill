@@ -1,5 +1,5 @@
 import React from 'react'
-import './ElectricBill.css';
+import './Products.css';
 
 export default function Products(props) {
     // let style = {
@@ -8,10 +8,10 @@ export default function Products(props) {
     // }
     return (
         <div className="Products">
-            <div className="eb-details">
+            <div className="pro-details">
                 <h1><span>{props.icon}</span>{props.heading}</h1>
             </div>
-            <div className="eb-content gb-content">
+            <div className="pro-content">
                 <h3>Month of January</h3>
                 <p><small>Due Date 29/january/2020</small></p>
                 <h2>{props.value}</h2>

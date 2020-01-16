@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import CanvasJSReact from '../assets/canvasjs.react';
-import './ColumnChartGas.css';
+// import './ColumnChartGas.css';
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
  
 export default class ColumnChartElectric extends Component {
-	constructor(props) {
-		super(props);
+	constructor() {
+		super();
 	}
   render() {
 	const options = {
 		animationEnabled: true,
 		exportEnabled: true,
-		theme: "dark2", //"light1", "dark1", "dark2"
+		theme: "light2", //"light1", "dark1", "dark2"
 		// title:{
 		// 	text: "Gas usage"
 		// },
