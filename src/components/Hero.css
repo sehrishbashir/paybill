@@ -5,8 +5,113 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url(../assets/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-box{
+    position: relative;
+    padding: 25px 30px;
+    overflow: hidden;
+    /* background: rgba(255,255,255,.1); */
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+}
+.hero-box:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width:50%;
+    height:100%;
+    /* background:rgba(255,255,255,.1); */
 }
 
+.hero-box:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:-100%;
+    width:50%;
+    height:100%;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.hero-box:hover:after{
+    left: 100%;
+}
+
+.hero-box .hero-span{
+    position: absolute;
+    display: block;
+    transition: 0.5s ease; 
+}
+
+.hero-box .hero-span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #fff;
+}
+
+.hero-box:hover .hero-span:nth-child(1){
+    width: 100%;
+    transform: translateX(100%);
+}
+
+.hero-box .hero-span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background: #fff;
+}
+
+.hero-box:hover .hero-span:nth-child(3){
+    width: 100%;
+    transform: translateX(-100%);
+}
+
+.hero-box .hero-span:nth-child(2){
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 0;
+    background: #fff;
+}
+
+.hero-box:hover .hero-span:nth-child(2){
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.hero-box .hero-span:nth-child(4){
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    height: 0;
+    background: #fff;
+}
+
+.hero-box:hover .hero-span:nth-child(4){
+    height: 100%;
+    transform: translateY(-100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
 .pay-bill {
     text-align: center;
 }
@@ -22,11 +127,11 @@
     padding: 0;
 }
 
-.content h1 {
+.hero-box .content h1 {
     margin: 0;
     font-weight: 300;
     font-size: 3em;
-    color: #f71e3b;
+    color: #fc4444;
     margin-top: -8px;
 }
 
@@ -46,21 +151,175 @@ b {
     padding: 10px 5px;
 }
 
-.login-btn, .register {
-    padding: 8px 70px ;
+/* .hero-container .register {
+    padding: 5px 40px ;
     font-size: 14px;
     color: #ffffff;
     border-radius: 1px;
-}
+} */
 
-.hero-container .login-btn {
-    background-color:#f71e3b ;
-    border: 1px solid #f71e3b;
-    margin-bottom: 8px;
-    padding: 8px 130.5px;
-}
-
-.register {
+/* .hero-container .register {
     background-color: #0a1d2e;
     border: 1px solid #0a1d2e;
+    margin-top: 20px;
+} */
+
+.hero-container .login-btn, .hero-container .register {
+    background-color: transparent;
+    border: none;
 }
+
+
+.hero-container .login-btn, .hero-container .register {
+    position: relative;
+    display: inline-block;
+    padding: 5px 30px;
+    color: #ffffff;
+    letter-spacing: 4px;
+    font-size: 18px;
+    overflow: hidden;
+    transition: 0.2s;
+    text-align: center;
+}
+
+
+
+.hero-container .login-btn:hover {
+    background: #0a99cb;
+    /* box-shadow: 0 0 10px #0a99cb, 0 0 40px #0a99cb, 0 0 80px #0a99cb; */
+    box-shadow: 0 0 2px #0a99cb, 0 0 2px #0a99cb, 0 0 2px #0a99cb;
+    transition-delay: 1s;
+}
+
+.hero-container .login-btn .log-span, .hero-container .register .reg-span {
+    position: absolute;
+    display: block;
+}
+
+.hero-container .login-btn .log-span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #0a99cb);
+}
+
+.hero-container .login-btn:hover .log-span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.hero-container .login-btn .log-span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #0a99cb);
+}
+
+.hero-container .login-btn:hover .log-span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.hero-container .login-btn .log-span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #0a99cb);
+}
+
+.hero-container .login-btn:hover .log-span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.hero-container .login-btn .log-span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #0a99cb);
+}
+
+.hero-container .login-btn:hover .log-span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+
+
+
+
+
+
+.hero-container .register:hover {
+    background: #01304c;
+    /* box-shadow: 0 0 10px #01304c, 0 0 40px #01304c, 0 0 80px #01304c; */
+    box-shadow: 0 0 2px #01304c, 0 0 2px #01304c, 0 0 2px #01304c;
+    transition-delay: 1s;
+}
+
+.hero-container .register .reg-span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #01304c);
+}
+
+.hero-container .register:hover .reg-span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.hero-container .register .reg-span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #01304c);
+}
+
+.hero-container .register:hover .reg-span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.hero-container .register .reg-span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #01304c);
+}
+
+.hero-container .register:hover .reg-span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.hero-container .register .reg-span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #01304c);
+}
+
+.hero-container .register:hover .reg-span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+
+

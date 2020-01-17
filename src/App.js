@@ -20,6 +20,7 @@ import { faTint, faLightbulb, faClock } from '@fortawesome/free-solid-svg-icons'
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CustomRouter from './CustomRouter';
+// import { MyIndex } from './components/form/MyIndex';
 
 
 
@@ -27,74 +28,70 @@ export default class App extends Component {
   constructor() {
     super();
 
-  //   this.state = {
-  //     userData: [
-  //       {
-  //         username: "username",
-  //         password: "************"
-  //       }
+    this.state = {
+      loginData: [
+        {
+          username: "username",
+          password: "************"
+        }
+      ],
+      registerData: [
 
-  //     ]
-  //   }
-  // }
-
-  // handlename = (event) => {
-  //   this.setState({
-  //     username: event.target.value
-  //   });
-  // }
-
-  // handlepassword = (event) => {
-  //   this.setState({
-  //     password: event.target.value
-  //   });
-
+      ]
+    }
   }
+
+  handlename = (event) => {
+    this.setState({
+      username: event.target.value
+    });
+  }
+
+  handlepassword = (event) => {
+    this.setState({
+      password: event.target.value
+    });
+  }
+
   render() {
     return (
+
       <div>
+        {/* <MyIndex /> */}
+
         {/* {
-                    this.state.userData.map(user => {
-                        return <Login userdetails={user} 
-                            callEditName={(user) => this.handlename} callEditPassword={(user) => this.handlepassword}/>
-                    })
-                } */}
-        {/* <Hero /> */}
+          this.state.userData.map(user => {
+            return <Login user={user}
+              callEditName={(user) => this.handlename}
+              callEditPassword={(user) => this.handlepassword} />
+          })
+        } */}
+
+
+
         <Router>
           <Switch>
             <Route path="/" exact component={Hero} />
-            {/* hero */}
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
-
-            {/* login */}{/* register */}
             <Route path="/over-view-page" component={OverViewPage} />
-
-
-            {/* waterbill */}{/* gas-bill */}{/* electric-bill */}
             <Route path="/pay-electric-bill" component={PayYourBill} />
-
-            {/* waterbill */}{/* gas-bill */}{/* electric-bill */}{/* pay-our-bill */}{/* over-view-page */}
             <Route path="/back" component={OverViewPage} />
-
-            {/* over-view-page */}
             <Route path="/water-bill" component={WaterBill} />
             <Route path="/electric-bill" component={ElectricBill} />
             <Route path="/gas-bill" component={GasBill} />
             <Route path="/update" component={Update} />
-
-
-            {/* pay-our-bill */}{/* over-view-page */}{/* waterbill */}{/* gas-bill */}{/* electric-bill */}
             <Route path="/logout" component={Hero} />
-
-            {/* update */}
             <Route path="/updated" component={OverViewPage} />
             <Route path="/pay-bill" component={PayYourBill} />
-
-
-
           </Switch>
         </Router>
+
+
+
+
+
+
         {/* <Hero /> */}
         {/* <Login /> */}
         {/* <Register />

@@ -46,67 +46,54 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Login from './Login';
 
 export default class Hero extends Component {
-    constructor(props) {
-        super(props);
-         this.state = {
-      userData: [
-        {
-          username: "username",
-          password: "************"
-        }
 
-      ]
-    }
-  }
 
-  handlename = (event) => {
-    this.setState({
-      username: event.target.value
-    });
-  }
 
-  handlepassword = (event) => {
-    this.setState({
-      password: event.target.value
-    });
-    }
-
-render() {
+  render() {
     return (
-        <Router>
-
-
-            <div className="HeroStyle">
-            {
-                    this.state.userData.map(user => {
-                        return <Login user={user} 
-                            callEditName={(user) => this.handlename} callEditPassword={(user) => this.handlepassword}/>
-                    })
-                }
-                <div className="hero-container">
-                    <div className="pay-bill">
-                        <div className="icons">
-                            <div className="drop"><FontAwesomeIcon icon={faTint} /></div>
-                            <div className="bulb"><FontAwesomeIcon icon={faLightbulb} /></div>
-                            <div className="clock"><FontAwesomeIcon icon={faClock} /></div>
-                        </div>
-                        <div className="content">
-                            <h1>Pay<b>Bill</b></h1>
-                            <p>Pay your bill on the go now</p>
-                        </div>
-                    </div>
-                    <div className="pb-btn">
-                        {/* <Link to="/login"><button className="login-btn">Login</button></Link> 
+      <Router>
+        <div className="HeroStyle">
+          <div className="hero-container">
+            <div className="hero-box">
+              <span className="hero-span"></span>
+              <span className="hero-span"></span>
+              <span className="hero-span"></span>
+              <span className="hero-span"></span>
+              <div className="pay-bill">
+                <div className="icons">
+                  <div className="drop"><FontAwesomeIcon icon={faTint} /></div>
+                  <div className="bulb"><FontAwesomeIcon icon={faLightbulb} /></div>
+                  <div className="clock"><FontAwesomeIcon icon={faClock} /></div>
+                </div>
+                <div className="content">
+                  <h1>Pay<b>Bill</b></h1>
+                  <p>Pay your bill on the go now</p>
+                </div>
+              </div>
+              <div className="pb-btn">
+                {/* <Link to="/login"><button className="login-btn">Login</button></Link> 
                         <Link to="/register"><button className="register">New Customer ? Register</button></Link> */}
 
-                        <button onClick={e => window.open('/login', '_self')} className="login-btn">Login</button>
-                        <button onClick={e => window.open('/register', '_self')} className="register">New Customer ? Register</button>
-                    </div>
-                </div>
+                <button onClick={e => window.open('/login', '_self')} className="login-btn">
+                  <span className="log-span"></span>
+                  <span className="log-span"></span>
+                  <span className="log-span"></span>
+                  <span className="log-span"></span>
+                  Login</button>
+                <button onClick={e => window.open('/register', '_self')} className="register">
+                  <span className="reg-span"></span>
+                  <span className="reg-span"></span>
+                  <span className="reg-span"></span>
+                  <span className="reg-span"></span>
+                  New Customer ? Register</button>
+              </div>
             </div>
-        </Router>
+          </div>
+        </div>
+      </Router>
     )
-}}
+  }
+}
 
 
 
