@@ -33,7 +33,9 @@ export default class GasBill extends Component {
                             <div className="btn-yourbill">
 
 
-                                <button onClick={e => window.open('/pay-bill', '_self')} className="paybill-btn">Pay your Gas Bill</button>
+                            <div className="signin">
+                        <button onClick={e => window.open('/pay-bill', '_self')} className="login animated fadeInUp slower delay-1s">Pay your Gas Bill</button>
+                        </div>
                                 {/* <Link to="pay-bill"><button className="paybill-btn">Pay your Gas Bill</button></Link> */}
                             </div>
 

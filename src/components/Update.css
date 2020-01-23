@@ -1,13 +1,51 @@
 .update-container {
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    background-color: #eff1f2;
 }
 
-.up-content {
+
+.update-container .signin, .pyb-container .signin, .contact-container .signin {
+    padding: 10px;
+}
+
+.update-container .signin .forgot-pw, .update-container .signin .input-field label, 
+.pyb-container .signin  .forgot-pw, .pyb-container .signin  .input-field label,
+.contact-container .signin  .forgot-pw, .contact-container .signin  .input-field label {
+    color: #767f85;
+}
+
+.update-container .signin .input-field input,
+.pyb-container .signin .input-field input,
+.contact-container .signin .input-field input {
+    background-color: #1b717e;
+    color: #ffffff;
+}
+
+.update-container .signin .input-field i, .update-container .up-details h1,
+.pyb-container .signin .input-field i, .pyb-container .up-details h1,
+.contact-container .signin .input-field i, .contact-container .up-details h1 {
+    color: #ffffff;
+}
+
+.update-container .up-details,
+.pyb-container .up-details,
+.contact-container .up-details {
+    text-align: center;
+    padding: 30px 10px;
+    background-color: #362e67;
+}
+
+.update-container .pencil,
+.pyb-container .pencil {
+    float: right;
+}
+
+
+/* .up-content {
     width: 100%;
 }
 
@@ -82,7 +120,7 @@ input {
 }
 .font-icon{
     color: #c0c0c0;
-}
+} */
 
 
 

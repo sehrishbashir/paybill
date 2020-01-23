@@ -27,8 +27,10 @@ export default function WaterBill() {
                             </div>
                         </div>
                         <div className="btn-yourbill">
-
-                            <button onClick={e => window.open('/pay-bill', '_self')} className="paybill-btn">Pay your Water Bill</button>
+                        <div className="signin">
+                        <button onClick={e => window.open('/pay-bill', '_self')} className="login animated fadeInUp slower delay-1s">Pay your Water Bill</button>
+                        </div>
+                            {/* <button onClick={e => window.open('/pay-bill', '_self')} className="paybill-btn">Pay your Water Bill</button> */}
                             {/* <Link to="pay-bill"><button className="paybill-btn">Pay your Water Bill</button></Link> */}
                         </div>
 
@@ -36,6 +38,7 @@ export default function WaterBill() {
 
 
                     </div>
+                    
                 </div>
             </div>
         </Router>

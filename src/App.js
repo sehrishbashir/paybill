@@ -9,18 +9,15 @@ import OverViewPage from './components/OverViewPage';
 import WaterBill from './components/WaterBill';
 import ElectricBill from './components/ElectricBill';
 import GasBill from './components/GasBill';
-import ProgressChart from './components/ProgressChart';
-import ColumnChart from './components/ColumnChartGas';
-import Template from './components/Template';
 
 
-// import './components/Hero.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTint, faLightbulb, faClock } from '@fortawesome/free-solid-svg-icons'
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import CustomRouter from './CustomRouter';
-// import { MyIndex } from './components/form/MyIndex';
+import Contact from './components/Contact';
+
+
 
 
 
@@ -57,7 +54,7 @@ export default class App extends Component {
     return (
 
       <div>
-        {/* <MyIndex /> */}
+
 
         {/* {
           this.state.userData.map(user => {
@@ -69,7 +66,7 @@ export default class App extends Component {
 
 
 
-        <Router>
+        {/* <Router>
           <Switch>
             <Route path="/" exact component={Hero} />
             <Route path="/login" component={Login} />
@@ -85,8 +82,7 @@ export default class App extends Component {
             <Route path="/updated" component={OverViewPage} />
             <Route path="/pay-bill" component={PayYourBill} />
           </Switch>
-        </Router>
-
+        </Router> */}
 
 
 
@@ -94,13 +90,16 @@ export default class App extends Component {
 
         {/* <Hero /> */}
         {/* <Login /> */}
-        {/* <Register />
-      <Update /> */}
+        {/* <Register /> */}
+        {/* <OverViewPage /> */}
+        {/* <Update /> */}
+
+
+        {/* <WaterBill /> */}
+        {/* <ElectricBill /> */}
+        {/* <GasBill /> */}
         {/* <PayYourBill /> */}
-        {/* <OverViewPage />
-      <WaterBill />
-      <ElectricBill />
-      <GasBill /> */}
+        <Contact />
 
 
 

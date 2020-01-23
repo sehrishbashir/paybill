@@ -11,7 +11,7 @@ body {
 
 .pyb-content {
     text-align: center;
-    padding: 10px 65px;
+    padding: 15px 30px;
 }
 
 .ant-calendar-picker-input.ant-input {
@@ -38,11 +38,13 @@ body {
     color: #282828;
     margin-top: 8px;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 15px;
 
 }
 .pyb-content span {
     line-height: 1.2;
+    font-size: 30px;
+    font-weight: 800;
 }
 
 .pyb-container hr {
@@ -111,10 +113,6 @@ body {
     background-color: #ffa123;
     border: 1px solid #ffa123;
     
-}
-.copy-right span{
-    color: #f72542;
-    font-weight: 400;
 }
 
 .demo-cards-div{

@@ -13,8 +13,8 @@ export default function Header(props) {
                             {props.backIcon} {props.back}
                             {/* <Link to="back">{props.backIcon} {props.back}</Link> */}
                         </li>
-                        <li className="paybill nw-p">PayBill</li>
-                        <li className="back nw-p1 a" onClick={e => window.open('/logout', '_self')}>
+                        <li className="paybill nw-p extra">PayBill</li>
+                        <li className="back nw-p1" onClick={e => window.open('/logout', '_self')}>
                             Logout
                             {/* <Link className="a" to="logout">Logout</Link> */}
                         </li>

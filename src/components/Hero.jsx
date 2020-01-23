@@ -54,39 +54,23 @@ export default class Hero extends Component {
       <Router>
         <div className="HeroStyle">
           <div className="hero-container">
-            <div className="hero-box">
-              <span className="hero-span"></span>
-              <span className="hero-span"></span>
-              <span className="hero-span"></span>
-              <span className="hero-span"></span>
-              <div className="pay-bill">
-                <div className="icons">
-                  <div className="drop"><FontAwesomeIcon icon={faTint} /></div>
-                  <div className="bulb"><FontAwesomeIcon icon={faLightbulb} /></div>
-                  <div className="clock"><FontAwesomeIcon icon={faClock} /></div>
-                </div>
-                <div className="content">
-                  <h1>Pay<b>Bill</b></h1>
-                  <p>Pay your bill on the go now</p>
-                </div>
+            <div className="pay-bill ">
+              <div className="icons animated fadeInUp slow delay-1s">
+                <div className="drop"><FontAwesomeIcon icon={faTint} /></div>
+                <div className="bulb"><FontAwesomeIcon icon={faLightbulb} /></div>
+                <div className="clock"><FontAwesomeIcon icon={faClock} /></div>
               </div>
-              <div className="pb-btn">
-                {/* <Link to="/login"><button className="login-btn">Login</button></Link> 
+              <div className="content">
+                <h1 className="animated fadeInUp slow delay-2s">Pay<b>Bill</b></h1>
+                <p className="animated fadeInUp slow delay-3s">Pay your bill on the go now</p>
+              </div>
+            </div>
+            <div className="pb-btn">
+              {/* <Link to="/login"><button className="login-btn">Login</button></Link> 
                         <Link to="/register"><button className="register">New Customer ? Register</button></Link> */}
 
-                <button onClick={e => window.open('/login', '_self')} className="login-btn">
-                  <span className="log-span"></span>
-                  <span className="log-span"></span>
-                  <span className="log-span"></span>
-                  <span className="log-span"></span>
-                  Login</button>
-                <button onClick={e => window.open('/register', '_self')} className="register">
-                  <span className="reg-span"></span>
-                  <span className="reg-span"></span>
-                  <span className="reg-span"></span>
-                  <span className="reg-span"></span>
-                  New Customer ? Register</button>
-              </div>
+              <button onClick={e => window.open('/login', '_self')} className="login-btn animated fadeInUp slow delay-4s">Login</button>
+              <button onClick={e => window.open('/register', '_self')} className="register animated fadeInUp slow delay-5s">New Customer <span className="mark">?</span> Register</button>
             </div>
           </div>
         </div>

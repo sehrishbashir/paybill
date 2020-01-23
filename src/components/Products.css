@@ -1,7 +1,7 @@
 .pro-content h2 {
     color: #081c2d;
-    font-weight: 400;
-    font-size: 51px;
+    font-weight: 500;
+    font-size: 48px;
     margin-top: 0;
     line-height: 48px;
     margin-bottom: 18px;
@@ -14,7 +14,7 @@
 }
 
 .pro-content h3, p {
-    color: #acacac;
+    color: #767f85;
 }
 
 .pro-content p {
@@ -25,21 +25,33 @@
 
 .pro-details h1 {
     text-align: center;
-    color: #e7e7e7;
+    color: #ffffff;
     margin: 0;
-    padding: 15px 0;
+    padding: 20px 0;
     font-weight: 100;
     font-size: 45px;
-    background-color: #081c2d;
+}
+
+.waterbill-container .pro-details {
+    background-color: rgba(11, 59, 66, 1);
+}
+
+.electric-container .pro-details {
+    background-color: rgba(208, 120, 19, 1);
+}
+
+.gasbill-container .pro-details {
+    background-color: rgba(16, 11, 7, 1);
 }
 
 .pro-details span {
     margin-right: 10px;
     font-size: 50px;
+    color: #ffffff;
 }
 
 .pro-content {
-    padding: 25px 0;
+    padding: 10px 0;
 }
 
 .pro-content {

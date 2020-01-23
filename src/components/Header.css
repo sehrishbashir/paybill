@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 5px 5px;
+    background-color: #ffffff;
 }
 
 .Header ul {
@@ -16,12 +17,13 @@
     list-style: none;
 }
 
-.nw-p {
-    color: #151515;
+.Header .nw-p1 {
+    color: #362e67;
+    font-weight: 500;
 }
 
-.nw-p1 a, .nw-p1 a:hover {
-    color:#007bff ;
+.Header .nw-p {
+    color: #767f85;
 }
 
 .ovp-container .nw-p {

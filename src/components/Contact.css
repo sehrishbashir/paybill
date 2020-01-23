@@ -1,0 +1,19 @@
+.contact-container .signin {
+    width: 100%;
+}
+
+.contact-container .input-field .mess {
+    margin-top: -23px;
+}
+
+.contact-container .txtre {
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.contact-container .txtre textarea {
+    outline: none;
+    border: 2px solid #1b717e;
+    border-radius: 3px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+}

@@ -6,11 +6,12 @@
 // import App from './App';
 
 // const CustomRouter = () => (
-//         <Router>
-//         <div>
-//             <Route exact path="/" component={App} />
-//         </div>
-//     </Router>
+//     <div className="CustomRouter"></div>
+//     //     <Router>
+//     //     <div>
+//     //         <Route exact path="/" component={App} />
+//     //     </div>
+//     // </Router>
     
 // )
 

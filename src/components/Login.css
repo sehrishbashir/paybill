@@ -1,82 +1,294 @@
-.login-container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+        .login-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .pay-bill {
+            text-align: center;
+        }
+        
+        .login-container .icons {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .drop,
+        .bulb,
+        .clock {
+            font-size: 45px;
+            padding: 10px 10px 0 10px;
+            color: #ededed;
+        }
+        
+        .login-container .content {
+            text-align: center;
+        }
+        
+        .pb-btn {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 5px;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        .login-container .banner[_ngcontent-c14] {
+            background-image: linear-gradient(213deg, #3ba5b4 0, #38ba8a 100%);
+        }
+        
+        .banner[_ngcontent-c14] {
+            width: 100%;
+            height: auto;
+            min-height: 100vh;
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .banner__figure[_ngcontent-c14] {
+            position: absolute;
+            background: rgba(255, 255, 255, .08);
+            animation: animate 25s ease-out 0.5s infinite alternate none;
+            animation-play-state: running;
+        }
+        
+        .banner[_ngcontent-c14] {
+            box-direction: normal;
+        }
+        
+        .banner__figure.first[_ngcontent-c14] {
+            width: 2.3125rem;
+            height: 4.5625rem;
+            top: 5%;
+            left: 24%;
+        }
+        
+        @keyframes animate {
+            0% {
+                transform: matrix3d(0.986935, 0.161146, 0, 0, -0.161146, 0.986935, 0, 0, 0, 0, 1, 0, -15.064, -16.1823, 0, 1);
+            }
+            50% {
+                transform: matrix3d(0.726318, -0.687363, 0, 0, 0.687363, 0.726318, 0, 0, 0, 0, 1, 0, -5.25053, -16.584, 0, 1);
+            }
+            100% {
+                transform: matrix3d(-0.0467876, 0.998905, 0, 0, -0.998905, -0.0467876, 0, 0, 0, 0, 1, 0, -46.4857, 0.579261, 0, 1);
+            }
+        }
+        
+        .banner__figure.second[_ngcontent-c14] {
+            width: 4.375rem;
+            height: 4.375rem;
+            top: 22%;
+            left: 10%;
+            border-radius: 100%;
+        }
+        
+        .banner__figure.third[_ngcontent-c14] {
+            width: 0;
+            height: 0;
+            border-top: 6.5625rem solid transparent;
+            border-bottom: 5.31225rem solid transparent;
+            border-left: 12.5rem solid rgba(255, 255, 255, .08);
+            top: 35%;
+            left: 30%;
+            background-color: transparent;
+        }
+        
+        .banner__figure.four[_ngcontent-c14] {
+            width: 2.3125rem;
+            height: 4.5625rem;
+            top: 75%;
+            left: 22%;
+            transform: rotate(-75deg);
+        }
+        
+        .banner__figure.five[_ngcontent-c14] {
+            width: 2.3125rem;
+            height: 2.3125rem;
+            top: 10%;
+            right: 5%;
+            border-radius: 100%;
+        }
+        
+        .banner__figure.six[_ngcontent-c14] {
+            width: 0;
+            height: 0;
+            border-top: 1.125rem solid transparent;
+            border-bottom: 1.125rem solid transparent;
+            border-left: 2.25rem solid rgba(255, 255, 255, .08);
+            top: 20%;
+            right: 19%;
+            background: transparent;
+        }
+        
+        .banner__figure.seven[_ngcontent-c14] {
+            width: 6.3125rem;
+            height: 12.4375rem;
+            top: 72%;
+            right: -3%;
+            transform: rotate(-65deg);
+        }
+        
+        .banner__figure.eight[_ngcontent-c14] {
+            width: 9.5rem;
+            height: 9.5rem;
+            bottom: 25rem;
+            right: -38%;
+            border-radius: 100%;
+        }
+        
+        .banner {
+            position: absolute;
+        }
+        
+        .pay-bill {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .login-container .content p {
+            margin-bottom: 0;
+        }
+        
+        .login-container .signin {
+            padding: 15px 10px;
+        }
+        
+        .signin {
+            border-radius: 5px;
+            width: 95%;
+            background: transparent;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .signin .form-title {
+            font: 500 16px/1 'Roboto', sans-serif;
+            color: #EBEBEB;
+            text-align: center;
+            margin: 35px 0;
+        }
+        
+        .signin .input-field {
+            position: relative;
+            height: 50px;
+            margin: 18px 13px;
+            transition: all 300ms;
+        }
 
-
-.pay-bill {
-    text-align: center;
-}
-
-.login-container .icons {
-    display: flex;
-    justify-content: center;
-}
-
-.drop, .bulb, .clock {
-    font-size: 45px;
-    padding: 10px 10px 0 10px;
-    color: #ededed;
-}
-
-.content h1 {
-    margin: 0;
-    font-weight: 300;
-    font-size: 3em;
-    color: #f71e3b;
-    margin-top: -8px;
-}
-
-b {
-    color: #0a1d2e;
-}
-
-.content p {
-    margin-top: 1px;
-    color: #9b9b9b;
-    font-size: 16px;
-}
-
-.pb-btn {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 5px;
-}
-
-.login, .forget{
-    padding: 8px 90px ;
-    font-size: 14px;
-    color: #ffffff;
-    border-radius: 1px;
-}
-
-.login {
-    padding: 8px 130px ;
-    margin: 5px 0 4px 0;
-    background-color:#f71e3b ;
-    border: 1px solid #f71e3b;
-}
-
-.forget {
-    color: #0a1d2e;
-    border: none;
-    background: transparent;
-}
-
-.fill {
-    font-size: 13px;
-    padding: 8px 12px;
-    margin-bottom: 8px;
-    background-color: #d5d5d5;
-    border: 1px solid #d5d5d5;
-    border-radius: 2px;
-}
-
-::placeholder {
-    color: #011627;
-    font-weight: 400;
-}
+        .login-container .signin .input-field i {
+            color: #362e67;
+        }
+        
+        .signin .input-field i {
+            position: absolute;
+            bottom: 28px;
+            left: 15px;
+            height: 0;
+            visibility: hidden;
+            font-size: 100%;
+            transition: height 250ms;
+        }
+        
+        .signin .input-field label {
+            margin-top: 20px;
+            width: 100%;
+            position: absolute;
+            left: 4px;
+            font: 400 16px/1 'Roboto', sans-serif;
+            color: #FFF;
+            opacity: 1;
+            transition: all 300ms;
+        }
+        
+        .signin .input-field input {
+            width: calc(100%);
+            height: 4px;
+            font: 500 16px/1 'Roboto', sans-serif;
+            border: none;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+            color: #606060;
+            border-radius: 6px;
+            outline: 0;
+            overflow: hidden;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all 300ms;
+        }
+        
+        .signin .forgot-pw {
+            display: flex;
+            justify-content: flex-end;
+            font: 600 14px/1 'Roboto', sans-serif;
+            color: #362e67;
+            text-decoration: none;
+            margin: 0 13px 25px 0;
+        }
+        
+        .signin button.login {
+            box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.75);
+            transition: .5s;
+            border-radius: 100px;
+            font: 500 16px/1 'Roboto', sans-serif;
+            padding: 16px 113px;
+            display: block;
+            background: #362e67;
+            color: #FFF;
+            border: none;
+            outline: 0;
+            cursor: pointer;
+        }
+        
+        .signin .input-field input:focus {
+            color: #333;
+        }
+        
+        .signin .input-field input:focus,
+        .signin .input-field input.not-empty {
+            height: auto;
+            padding: 14px 20px 14px 50px;
+        }
+        
+        .signin .input-field input:focus+i,
+        .signin .input-field input.not-empty+i {
+            font-size: 20px;
+            bottom: 26px;
+            height: 10px;
+            visibility: visible;
+        }
+        
+        .signin .input-field input:focus+i+label,
+        .signin .input-field input.not-empty+i+label {
+            font-size: 12px;
+            margin-top: -15px;
+            opacity: 0.7;
+            animation: label 300ms 1;
+        }
+        
+        .login-container .signin button.login:hover {
+            cursor: pointer;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.6);
+            transform: translate3d(0, -3px, 0);
+        }
