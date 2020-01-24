@@ -30,12 +30,12 @@ export default function Contact() {
 
                     </div>
 
-                    <button data-toggle="modal" data-target="#exampleModalCenter" className="register login animated bounceInDown slower delay-1s">Send</button>
-                    <div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <button data-toggle="modal" data-target="#exampleModal" className="register login animated bounceInDown slower delay-1s">Send</button>
+                    <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
                         <div className="modal-dialog modal-dialog-centered" role="document">
                             <div className="modal-content">
                                 <div className="modal-body">
-                                    <h1>Thank you for paying</h1>
+                                    <h1>Thank you for Cotacting</h1>
                                 </div>
                                 <div className="modal-footer">
                                     <button type="button" className="btn btn-secondary" data-dismiss="modal" onClick={e => window.open('/over-view-page', '_self')}>Close</button>

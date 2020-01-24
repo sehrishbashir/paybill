@@ -204,4 +204,7 @@ export default styled.div`
     font-size: 25px;
     padding: 0;
   }
+  .modal {
+    margin: 0;
+  }
 `

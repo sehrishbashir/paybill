@@ -66,7 +66,7 @@ export default class App extends Component {
 
 
 
-        {/* <Router>
+        <Router>
           <Switch>
             <Route path="/" exact component={Hero} />
             <Route path="/login" component={Login} />
@@ -82,7 +82,7 @@ export default class App extends Component {
             <Route path="/updated" component={OverViewPage} />
             <Route path="/pay-bill" component={PayYourBill} />
           </Switch>
-        </Router> */}
+        </Router>
 
 
 
@@ -99,7 +99,7 @@ export default class App extends Component {
         {/* <ElectricBill /> */}
         {/* <GasBill /> */}
         {/* <PayYourBill /> */}
-        <Contact />
+        {/* <Contact /> */}
 
 
 
